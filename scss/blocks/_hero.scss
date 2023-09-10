@@ -82,7 +82,7 @@
 }
 &__done {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     margin-bottom: 48px;
     @media all and (max-width:375px) {
         display: grid;
@@ -91,6 +91,7 @@
 &__done-item {
     display: flex;
     align-items: center;
+    margin-right: 40px;
     color: $--primary-sky-blue;
     font-size: 20px;
     font-style: normal;
@@ -117,6 +118,10 @@
     padding: 8px;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.4s;
+        &:hover{
+            background-color: $--primary-dark-blue-2;
+          }
     a{
         margin: 0px 15px;
         color: $--neutural-white;
