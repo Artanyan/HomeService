@@ -97,6 +97,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    &:last-child{
+        margin-right: 0px;
+    }
     @media all and (max-width:1024px) {
         font-size: 14px;
         font-style: normal;
