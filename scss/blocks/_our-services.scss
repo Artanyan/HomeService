@@ -2,7 +2,9 @@
 
 .our-services {
     padding: 0px 7% 120px;
-
+    @media all and (max-width:1024px) {
+        padding: 0px 7% 20px;
+    }
     &__info {
         text-align: center;
     }
