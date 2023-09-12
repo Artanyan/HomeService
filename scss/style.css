@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #142257;
 }
 .header__container {
+  display: flex;
   color: #ffffff;
   padding: 25px 55px;
   justify-content: space-around;
@@ -791,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .featured {
-  position: absolute;
+  position: relative;
   margin: 0px 0px 10px;
   padding: 64px 180px;
   background-color: #142257;
@@ -942,11 +943,120 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.how-works {
+  display: flex;
+  padding: 155px 50px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 88px;
+}
+@media all and (max-width: 1440px) {
+  .how-works {
+    gap: 44px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .how-works {
+    display: block;
+    text-align: center;
+    padding: 32px 24px;
+  }
+}
+.how-works__worker img {
+  width: 100%;
+}
+@media all and (max-width: 1024px) {
+  .how-works__worker img {
+    width: 70%;
+  }
+}
+.how-works__title {
+  margin-bottom: 60px;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+@media all and (max-width: 1024px) {
+  .how-works__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+.how-works__list {
+  counter-reset: ol-numbers;
+}
+.how-works__list li {
+  position: relative;
+  padding: 0px 0px 0px 50px;
+}
+@media all and (max-width: 530px) {
+  .how-works__list li {
+    padding: 0px;
+  }
+}
+.how-works__list li::before {
+  counter-increment: ol-numbers;
+  content: counter(ol-numbers) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  text-align: right;
+  color: #9EA3B5;
+}
+.how-works__item {
+  display: flex;
+  margin-bottom: 72px;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .how-works__item {
+    display: inline-flex;
+  }
+}
+@media all and (max-width: 530px) {
+  .how-works__item {
+    display: block;
+  }
+}
+.how-works__item h3 {
+  width: 164px;
+  margin: 0px 36px 0px 24px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+@media all and (max-width: 1024px) {
+  .how-works__item h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 530px) {
+  .how-works__item h3 {
+    margin: 0px 0px 12px 65px;
+    text-align: start;
+  }
+}
+.how-works__item p {
+  text-align: start;
+  max-width: 420px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 body {
   margin: 0 auto;
   font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-.container {
-  display: flex;
 }/*# sourceMappingURL=style.css.map */

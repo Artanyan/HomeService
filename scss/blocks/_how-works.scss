@@ -1,0 +1,101 @@
+@import './variables';
+
+.how-works {
+    display: flex;
+    padding: 155px 50px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 88px;
+    @media all and (max-width:1440px) {
+        gap: 44px;
+    }
+    @media all and (max-width:1024px) {
+        display: block;
+        text-align: center;
+        padding: 32px 24px;
+    }
+    &__worker {
+        img{
+            width: 100%;
+            @media all and (max-width:1024px) {
+                width: 70%;
+            }
+        }
+    }
+    // &__content {
+    // }
+    &__title {
+        margin-bottom: 60px;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        @media all and (max-width:1024px) {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; 
+        }
+    }
+    &__list {
+        counter-reset: ol-numbers;
+        li{
+            position: relative;
+            padding: 0px 0px 0px 50px;
+            @media all and (max-width:530px) {
+                padding: 0px;
+            }
+        }
+        li::before{
+            counter-increment: ol-numbers;
+            content: counter(ol-numbers) ".";
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 40px;
+            text-align: right;
+            color: $--neutural-grey-3;
+        }
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 72px;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        @media (min-width:768px) and (max-width:1024px) {
+            display: inline-flex;
+        }
+        @media all and (max-width:530px) {
+            display: block;
+        }
+        h3{
+            width: 164px;
+            margin: 0px 36px 0px 24px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            @media all and (max-width:1024px) {   
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+            }
+            @media all and (max-width:530px) {
+                margin: 0px 0px 12px 65px;
+                text-align: start;
+            }
+        }
+        p{
+            text-align: start;
+            max-width: 420px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}

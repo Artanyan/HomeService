@@ -3,6 +3,7 @@
 .header {
     background-color: $--primary-dark-blue-1;
     &__container {
+        display: flex;
         color: $--neutural-white;
         padding: 25px 55px;
         justify-content: space-around;
