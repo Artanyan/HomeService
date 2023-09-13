@@ -18,7 +18,7 @@
   .swiper-button-prev {
       width: 48px;
       height: 48px;
-      content: url(/img/icon/review/Button-left.svg);
+      content: url(../img/icon/review/Button-left.svg);
       background-color: $--neutural-soft-grey;
       border-radius: 50%;
       @media (min-width:768px) and (max-width:1240px) {
@@ -35,7 +35,7 @@
   .swiper-button-next {
       width: 48px;
       height: 48px;
-      content: url(/img/icon/review/Button-right.svg);
+      content: url(../img/icon/review/Button-right.svg);
       background-color: $--neutural-soft-grey;
       border-radius: 50%;
       @media (min-width:768px) and (max-width:1240px) {

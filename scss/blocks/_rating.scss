@@ -7,13 +7,13 @@
   .star::before{
     width: 24px;
     height: 24px;
-    content: url(/img/icon/review/rating/Ic_24-Star-disabled.svg);
+    content: url(../img/icon/review/rating/Ic_24-Star-disabled.svg);
     cursor: pointer;
   }
   .star.rated::before{
     width: 24px;
     height: 24px;
-    content: url(/img/icon/review/rating/Ic_24-Star-active.svg);
+    content: url(../img/icon/review/rating/Ic_24-Star-active.svg);
   }
   
   .stars{

@@ -1191,7 +1191,7 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-button-prev {
   width: 48px;
   height: 48px;
-  content: url(/img/icon/review/Button-left.svg);
+  content: url(../img/icon/review/Button-left.svg);
   background-color: #E3E6F0;
   border-radius: 50%;
 }
@@ -1213,7 +1213,7 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-button-next {
   width: 48px;
   height: 48px;
-  content: url(/img/icon/review/Button-right.svg);
+  content: url(../img/icon/review/Button-right.svg);
   background-color: #E3E6F0;
   border-radius: 50%;
 }
@@ -1242,14 +1242,14 @@ h1, h2, h3, h4, h5, h6 {
 .star::before {
   width: 24px;
   height: 24px;
-  content: url(/img/icon/review/rating/Ic_24-Star-disabled.svg);
+  content: url(../img/icon/review/rating/Ic_24-Star-disabled.svg);
   cursor: pointer;
 }
 
 .star.rated::before {
   width: 24px;
   height: 24px;
-  content: url(/img/icon/review/rating/Ic_24-Star-active.svg);
+  content: url(../img/icon/review/rating/Ic_24-Star-active.svg);
 }
 
 .stars {
