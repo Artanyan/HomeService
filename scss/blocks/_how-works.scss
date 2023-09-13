@@ -65,6 +65,9 @@
         font-style: normal;
         font-weight: 700;
         line-height: 64px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
         @media (min-width:768px) and (max-width:1024px) {
             display: inline-flex;
         }

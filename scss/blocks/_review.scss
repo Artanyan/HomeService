@@ -1,0 +1,118 @@
+@import './variables';
+
+.review {
+    display: flex;
+    padding: 0px 0px 130px 0px;
+    justify-content: center;
+    text-align: center;
+    @media all and (max-width:1024px) {
+        padding: 32px 0px;
+    }
+&__content {
+    width: 100%;
+    
+}
+&__title {
+    color: $--neutural-black;
+    margin-bottom: 90px;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    @media all and (max-width:1024px) {
+        margin-bottom: 32px;
+        padding: 0px 24px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+}
+&__slider {
+}
+
+&__wrapper {
+}
+
+&__slide {
+}
+
+.slide-review__logo {
+    margin-bottom: 25px;
+    img{
+        @media all and (max-width:1024px) {
+            width: 133px;
+            height: 36px;
+        }
+    }
+}
+.slide-review__text {
+    display: inline-block;
+    color: $--neutural-grey-1;
+    width: 728px;
+    padding: 40px 0px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    @media all and (max-width:1024px) {
+        padding: 24px 50px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    @media all and (max-width:768px) {
+        padding: 24px 24px;
+        width: auto;
+    }
+}
+.slide-review__user {
+    display: flex;
+    color: $--neutural-black;
+    padding: 40px 0px;
+    margin-bottom: 66px;
+    justify-content: center;
+    text-align: start;
+    @media all and (max-width:1024px) {
+        padding: 32px 0px;
+    }
+}
+.slide-review__avatar {
+    img{
+       margin-right: 32px;
+       width: 76px;
+       height: 76px;
+       border-radius: 50%;
+       object-fit: cover;
+       @media all and (max-width:1024px) {
+            display: grid;
+            align-content: center;
+            margin-right: 16px;
+            width: 52px;
+            height: 52px;
+       }
+   }
+}
+
+.slide-review__body {
+}
+.slide-review__name {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    @media all and (max-width:1024px) {
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+.slide-review__rating {
+}
+
+}

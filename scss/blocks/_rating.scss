@@ -1,0 +1,29 @@
+.star{
+    font-size: 2.0rem;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+  .star::before{
+    width: 24px;
+    height: 24px;
+    content: url(/img/icon/review/rating/Ic_24-Star-disabled.svg);
+    cursor: pointer;
+  }
+  .star.rated::before{
+    width: 24px;
+    height: 24px;
+    content: url(/img/icon/review/rating/Ic_24-Star-active.svg);
+  }
+  
+  .stars{
+      counter-reset: rateme 0;   
+      font-size: 2.0rem;
+      font-weight: 900;
+  }
+//   .star.rated{
+//       counter-increment: rateme 1;
+//   }
+//   .stars::after{
+//       content: counter(rateme) '/5';
+//   }
