@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__list {
   display: flex;
+  margin-bottom: 0px;
 }
 @media all and (max-width: 768px) {
   .header__list {
@@ -313,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero__list {
   display: flex;
   justify-content: center;
+  padding: 0px;
   margin-bottom: 24px;
 }
 .hero__list span {
@@ -359,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero__done {
   display: flex;
+  padding: 0px;
   justify-content: center;
   margin-bottom: 48px;
 }
@@ -459,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
   }
 }
-@media all and (max-width: 426px) {
+@media all and (max-width: 470px) {
   .hero__card {
     display: block;
     text-align: center;
@@ -584,6 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .professional-services__list {
   display: grid;
+  padding: 0px;
   margin-bottom: 24px;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 50px;
@@ -721,6 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .our-services__list {
   display: flex;
+  padding: 0px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -865,6 +870,7 @@ h1, h2, h3, h4, h5, h6 {
        columns: 2;
   -moz-column-gap: 184px;
        column-gap: 184px;
+  padding: 0px;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .featured__list {
@@ -1540,10 +1546,14 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
   display: flex;
   position: relative;
-  padding: 20px;
   background-color: #142257;
   justify-content: flex-end;
   gap: 15%;
+}
+@media all and (max-width: 1680px) {
+  .banner {
+    gap: 0%;
+  }
 }
 @media all and (max-width: 1024px) {
   .banner {
@@ -1556,21 +1566,41 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   left: 0px;
 }
+@media all and (max-width: 1024px) {
+  .banner__decoration {
+    position: relative;
+  }
+}
+.banner__decoration img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 .banner__content {
   display: inline-flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 36px;
-  width: 940px;
-  margin: 30px 0px;
-  padding: 0px 30px;
+  margin: 50px 0px;
+  padding: 0px 50px;
   text-align: start;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .banner__content {
+    width: 65%;
+  }
 }
 @media all and (max-width: 1024px) {
   .banner__content {
     width: 100%;
-    margin: 20px 0px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 0px 0px;
     padding: 0px 20px;
     gap: 28px;
   }
@@ -1590,8 +1620,31 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 32px;
   }
 }
+.banner__done {
+  padding: 0px;
+}
+@media all and (max-width: 1024px) {
+  .banner__done {
+    margin-bottom: 0px;
+  }
+}
 .banner__button {
   margin: 0px 0px 0px 25px;
+}
+@media all and (max-width: 1024px) {
+  .banner__button {
+    margin: 0px;
+  }
+}
+.banner__image {
+  width: 50%;
+  margin-top: 50px;
+  align-self: flex-end;
+}
+@media all and (max-width: 1024px) {
+  .banner__image {
+    width: 100%;
+  }
 }
 .banner__image img {
   width: 100%;

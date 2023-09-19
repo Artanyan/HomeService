@@ -59,6 +59,7 @@
     &__list {
         columns: 2;
         column-gap: 184px;
+        padding: 0px;
         @media (min-width:1024px) and (max-width:1440px) {
             column-gap: 92px;
         }

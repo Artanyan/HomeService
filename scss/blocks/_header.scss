@@ -83,6 +83,7 @@
     }
     &__list {
         display: flex;
+        margin-bottom: 0px;
         @media all and (max-width:768px) {
             display: grid;
             justify-content: center;

@@ -40,6 +40,7 @@
 &__list {
     display: flex;
     justify-content: center;
+    padding: 0px;
     margin-bottom: 24px;
     span{
         display: flex;
@@ -82,6 +83,7 @@
 }
 &__done {
     display: flex;
+    padding: 0px;
     justify-content:center;
     margin-bottom: 48px;
     @media all and (max-width:375px) {
@@ -168,7 +170,7 @@
         justify-content: flex-start;
         margin-bottom: 25px;
     }
-    @media all and (max-width:426px) {
+    @media all and (max-width:470px) {
         display: block;
         text-align: center;
         padding: 0px 0px;
