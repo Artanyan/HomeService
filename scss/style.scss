@@ -17,10 +17,15 @@
 @import './blocks/rating';
 @import './blocks/blog';
 @import './blocks/questions';
+@import './blocks/banner';
 // @import 'main.scss';
 // @import 'footer.scss';
 
 body{
   margin: 0 auto;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
 }
