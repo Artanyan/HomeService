@@ -1567,6 +1567,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 30px;
   text-align: start;
 }
+@media all and (max-width: 1024px) {
+  .banner__content {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    gap: 28px;
+  }
+}
 .banner__title {
   color: #ffffff;
   font-size: 64px;
