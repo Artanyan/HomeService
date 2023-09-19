@@ -40,6 +40,11 @@
         line-height: 32px;
             a{
                 color: $--primary-sky-blue;
+                transition: 400ms;
+                &:hover{
+                    font-size: 21px;
+                    color: $--primary-dark-blue-2;
+                }
             }
         @media all and (max-width:1024px) {
             font-size: 18px;
