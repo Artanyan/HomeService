@@ -1552,7 +1552,7 @@ h1, h2, h3, h4, h5, h6 {
   --bs-accordion-active-bg: $--neutural-white;
 }
 
-.banner {
+.advertising {
   display: flex;
   position: relative;
   background-color: #142257;
@@ -1560,27 +1560,27 @@ h1, h2, h3, h4, h5, h6 {
   gap: 15%;
 }
 @media all and (max-width: 1680px) {
-  .banner {
+  .advertising {
     gap: 0%;
   }
 }
 @media all and (max-width: 1024px) {
-  .banner {
+  .advertising {
     display: block;
     padding: 0px;
   }
 }
-.banner__decoration {
+.advertising__decoration {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 @media all and (max-width: 1024px) {
-  .banner__decoration {
+  .advertising__decoration {
     position: relative;
   }
 }
-.banner__decoration img {
+.advertising__decoration img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1588,7 +1588,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-position: bottom;
      object-position: bottom;
 }
-.banner__content {
+.advertising__content {
   display: inline-flex;
   width: 50%;
   flex-direction: column;
@@ -1600,12 +1600,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: start;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .banner__content {
+  .advertising__content {
     width: 65%;
   }
 }
 @media all and (max-width: 1024px) {
-  .banner__content {
+  .advertising__content {
     width: 100%;
     text-align: center;
     align-items: center;
@@ -1614,7 +1614,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 28px;
   }
 }
-.banner__title {
+.advertising__title {
   color: #ffffff;
   font-size: 64px;
   font-style: normal;
@@ -1622,40 +1622,40 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 76px;
 }
 @media all and (max-width: 1024px) {
-  .banner__title {
+  .advertising__title {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
   }
 }
-.banner__done {
+.advertising__done {
   padding: 0px;
 }
 @media all and (max-width: 1024px) {
-  .banner__done {
+  .advertising__done {
     margin-bottom: 0px;
   }
 }
-.banner__button {
+.advertising__button {
   margin: 0px 0px 0px 25px;
 }
 @media all and (max-width: 1024px) {
-  .banner__button {
+  .advertising__button {
     margin: 0px;
   }
 }
-.banner__image {
+.advertising__image {
   width: 50%;
   margin-top: 50px;
   align-self: flex-end;
 }
 @media all and (max-width: 1024px) {
-  .banner__image {
+  .advertising__image {
     width: 100%;
   }
 }
-.banner__image img {
+.advertising__image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
