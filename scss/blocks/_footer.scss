@@ -176,6 +176,10 @@
             margin-bottom: 30px;
         }
     }
+    .footer__menu-block{
+        display: grid;
+        gap: 24px;
+    }
     .footer__menu-list-1 {
         display: flex;
         margin: 0px 100px 0px 0px;

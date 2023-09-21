@@ -334,6 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .hero__item {
+  display: flex;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -403,31 +404,29 @@ h1, h2, h3, h4, h5, h6 {
 .hero__button {
   display: flex;
   margin: 0 auto;
+  padding: 8px 15px;
+  gap: 8px;
+  color: #ffffff;
   background-color: #15B2F5;
   border-radius: 60px;
-  padding: 8px;
   justify-content: center;
   align-items: center;
   transition-duration: 0.4s;
-}
-.hero__button:hover {
-  background-color: #1F3584;
-}
-.hero__button a {
-  margin: 0px 15px;
-  color: #ffffff;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 @media all and (max-width: 1024px) {
-  .hero__button a {
+  .hero__button {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
   }
+}
+.hero__button:hover {
+  background-color: #1F3584;
 }
 .hero__button img {
   padding: 12px;
@@ -1848,6 +1847,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     margin-bottom: 30px;
   }
+}
+.footer .footer__menu-block {
+  display: grid;
+  gap: 24px;
 }
 .footer .footer__menu-list-1 {
   display: flex;
