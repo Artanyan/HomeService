@@ -1848,7 +1848,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
-.footer .footer__menu-block {
+.footer .footer__menu-bloc {
   display: grid;
   gap: 24px;
 }
